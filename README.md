@@ -1,6 +1,5 @@
 #Heathstone.gg Desktop App
 
-
 ##Install
 
 Build Dependancies
@@ -19,3 +18,7 @@ App Dependancies
 ##Build
 
 `grunt build`
+
+
+#Architecture
+![diagram](https://raw.githubusercontent.com/hearthstone-gg/docs/master/architecture.png)

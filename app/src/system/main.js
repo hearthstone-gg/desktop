@@ -1,13 +1,16 @@
 var notifier = require('node-notifier');
 var appGui = window.require('./system/gui.js');
+var hsLogs = window.require('./system/hslogs.js');
 
 var gui = window.require('nw.gui');
 var win = gui.Window.get();
+win.showDevTools();
 
 //add the appGui
 appGui.init(gui,win);
 
-win.showDevTools();
+//start watching the log file
+hsLogs.init();
 
 //notification example
 // notifier.notify({
