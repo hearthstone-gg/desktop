@@ -1,6 +1,6 @@
 var appWidth = 300;
 
-exports.init = function(gui, win) {
+exports.init = function(events, gui, win) {
 
 	function menu() {
 		var m = new gui.Menu({
