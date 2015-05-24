@@ -22,7 +22,7 @@ exports.init = function(config, events, gui, win) {
 
 	function position() {
 		//position to the right and top of the screen
-		win.moveTo(window.window.screen.availWidth - appWidth, 40);
+		win.moveTo(window.window.screen.availWidth - appWidth + 20, 40);
 	}
 
 	menu();
