@@ -23,6 +23,9 @@ function init(config, events, appEvents) {
 		//detect if the user has been redirected to the app after authenticating
 		} else if (loc.host === config.services.app.domain && user) {
 			appEvents.emit('user', user);
+		} else if (loc.host.indexOf('battle.net') > -1 && loc.pathname.indexOf('/login') === 0 && loc.pathname !== '/oauth/authorize') {
+			user = null;
+			$iframe.attr('src', 'http://' + config.services.app.domain);
 		}
 	});
 }
