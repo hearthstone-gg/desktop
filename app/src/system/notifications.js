@@ -1,3 +1,6 @@
+/*
+notifies the user when things happen with system notifications
+*/
 var notifier = require('node-notifier');
 var path = require('path');
 

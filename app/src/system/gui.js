@@ -1,3 +1,6 @@
+/*
+sets up the application's stystem gui
+*/
 var appWidth = 400;
 
 exports.init = function(config, events, gui, win) {
