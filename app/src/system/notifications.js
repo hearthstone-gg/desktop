@@ -18,7 +18,7 @@ function notify() {
 	});
 }
 
-function init(events) {
+function init(config, events) {
 	events.on('friendly-hero', function(data){
 		friendlyClass = data.cardName;
 		notify();

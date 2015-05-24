@@ -1,4 +1,4 @@
-exports.init = function(events) {
+exports.init = function(config, events) {
 	var LogWatcher = window.require('hearthstone-log-watcher');
 	var logWatcher = new LogWatcher();
 

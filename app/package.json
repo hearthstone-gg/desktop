@@ -3,10 +3,10 @@
   "main": "./src/index.html",
   "window": {
     "toolbar": false,
-    "width": 300,
+    "width": 400,
     "height": 600,
     "show": false,
-    "min_width": 150,
+    "min_width": 400,
     "min_height": 300,
     "max_width": 500,
     "max_height": 800
@@ -15,6 +15,8 @@
   "dependencies": {
     "node-notifier": "~4.2.1",
     "hearthstone-log-watcher": "~1.2.2",
-    "jquery": "~2.1.4"
-  }
+    "jquery": "~2.1.4",
+    "hs.gg-config": "git+https://github.com/hearthstone-gg/config.git"
+  },
+  "chromium-args": "--ignore-certificate-errors"
 }
