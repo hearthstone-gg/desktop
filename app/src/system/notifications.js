@@ -6,10 +6,9 @@ var path = require('path');
 
 var friendlyClass;
 var opposingClass;
-var players;
 
 function notify() {
-	if (!friendlyClass || !opposingClass || !players) { return; }
+	if (!friendlyClass || !opposingClass) { return; }
 	notifier.notify({
 		title: 'Classes Detected',
 		message: 'Opponents Hero is: ' + opposingClass + '\n'+'Your Hero is: ' + friendlyClass,
@@ -29,9 +28,6 @@ function init(config, events) {
 	events.on('opposing-hero', function(data){
 		opposingClass = data.cardName;
 		notify();
-	});
-	events.on('game-start', function(data){
-		players = data;
 	});
 
 

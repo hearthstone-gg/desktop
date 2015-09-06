@@ -4,7 +4,7 @@
 exports.init = function(config, events, appEvents) {
 	var LogWatcher = window.require('hearthstone-log-watcher');
 	var logWatcher = new LogWatcher();
-
+	
 	logWatcher.on('zone-change', function(data) {
 		if (data.zone === 'PLAY (Hero)' && data.team === 'FRIENDLY') {
 			events.emit('friendly-hero', data);
