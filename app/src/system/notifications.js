@@ -30,6 +30,11 @@ function init(config, events) {
 		notify();
 	});
 
+	events.on('game-over', function(data){
+		opposingClass = null;
+		friendlyClass = null;
+	});
+
 
 	notifier.on('click', function (notifierObject, options) {
 		window.focus();
